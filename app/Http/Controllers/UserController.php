@@ -30,9 +30,15 @@ class UserController extends Controller
     public function store(StoreUserRequest $request)
     {
     //  $request->validate([
-    //   "name" => "required|string|min:2",
-    //     "email"=>"Required|email",
-    //     "age"=>"Required|numeric",
+    //         'name' => 'required|string|min:3',
+    //         'email' => 'required|email',
+    //         'age' => 'required|integer|min:18',
+    //         'date' => 'required|date',
+    //         'password' => 'required|min:6|confirmed',
+    //         'url' => 'nullable|url',
+    //         'image' => 'nullable|file|mimes:jpeg,png,jpg|max:2048',
+    //         'product_name' => 'required|string|min:3',
+    //         'price' => 'required|numeric|min:0.01',
     //  ]);
     return $request->all();
     }
