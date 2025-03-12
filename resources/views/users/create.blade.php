@@ -2,12 +2,14 @@
     <form action="{{route ('users.store')}}" method="POST">
         @csrf
 
+
         <label>Ism: <input type="text" name="name" value="{{ old('name') }}"></label>
         @error('name') {{ $message }} @enderror
         <br>
-
+        
         <label>Email: <input type="email" name="email" value="{{ old('email') }}"></label>
         @error('email') {{ $message }} @enderror
+        
         <br>
 
         <label>Yosh: <input type="number" name="age" value="{{ old('age') }}"></label>
