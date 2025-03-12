@@ -3,9 +3,11 @@
         @csrf
 
 
+
         <label>Ism: <input type="text" name="name" value="{{ old('name') }}"></label>
         @error('name') {{ $message }} @enderror
         <br>
+        
         
         <label>Email: <input type="email" name="email" value="{{ old('email') }}"></label>
         @error('email') {{ $message }} @enderror
