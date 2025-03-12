@@ -40,6 +40,7 @@ class UserController extends Controller
     //         'product_name' => 'required|string|min:3',
     //         'price' => 'required|numeric|min:0.01',
     //  ]);
+    
     return $request->all();
     }
 
